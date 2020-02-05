@@ -33,7 +33,7 @@ $(document).ready(function(){
       $.each(data, function(key, value){
        employee_data += '<tr>';
        employee_data += '<td>'+value.id+'</td>';
-       employee_data += '<td>'+value.name+'</td>';
+       employee_data += '<td><span class="badge badge-warning">'+value.name+'</span></td>';
        employee_data += '<td>'+value.address+'</td>';
        employee_data += '<td>'+value.gender+'</td>';
        employee_data += '<td>'+value.designation+'</td>';
