@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <head>
+    <title>JSON</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="table-responsive">
+        <h1>JSON</h1>
+        <br/>
+
+        <table class="table table-bordered table-striped" id="employee_table">
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Gender</th>
+            <th>Designation</th>
+            <th>Age</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+$(document).ready(function(){
+
+	$.getJSON("employee.json", function(data){
+      var employee_data = '';
+      $.each(data, function(key, value){
+       employee_data += '<tr>';
+       employee_data += '<td>'+value.name+'</td>';
+	     employee_data += '<td>'+value.address+'</td>';
+       employee_data += '<td>'+value.gender+'</td>';
+       employee_data += '<td>'+value.designation+'</td>';
+       employee_data += '<td>'+value.age+'</td>';
+      });
+      $('#employee_table').append(employee_data);
+    });
+  });  
+  
+</script>

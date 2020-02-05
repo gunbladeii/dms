@@ -1,0 +1,37 @@
+[
+	{
+		"id":"1",
+		"name":"ali bin bakar",
+		"address":"Jalan Purnama merindu",
+		"gender":"Male",
+		"age":"40"
+	},
+	{
+		"id":"2",
+		"name":"ali bin bakar",
+		"address":"Jalan Purnama merindu",
+		"gender":"Male",
+		"age":"40"
+	},
+	{
+		"id":"3",
+		"name":"ali bin bakar",
+		"address":"Jalan Purnama merindu",
+		"gender":"Male",
+		"age":"40"
+	},
+	{
+		"id":"4",
+		"name":"ali bin bakar",
+		"address":"Jalan Purnama merindu",
+		"gender":"Male",
+		"age":"40"
+	},
+	{
+		"id":"5 ",
+		"name":"ali bin bakar",
+		"address":"Jalan Purnama merindu",
+		"gender":"Male",
+		"age":"40"
+	}
+]
