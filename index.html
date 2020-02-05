@@ -13,6 +13,7 @@
 
         <table class="table table-bordered table-striped" id="employee_table">
           <tr>
+            <th>No</th>
             <th>Name</th>
             <th>Address</th>
             <th>Gender</th>
@@ -31,8 +32,9 @@ $(document).ready(function(){
       var employee_data = '';
       $.each(data, function(key, value){
        employee_data += '<tr>';
+       employee_data += '<td>'+value.id+'</td>';
        employee_data += '<td>'+value.name+'</td>';
-	     employee_data += '<td>'+value.address+'</td>';
+       employee_data += '<td>'+value.address+'</td>';
        employee_data += '<td>'+value.gender+'</td>';
        employee_data += '<td>'+value.designation+'</td>';
        employee_data += '<td>'+value.age+'</td>';
