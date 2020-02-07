@@ -10,7 +10,10 @@
       <div class="table-responsive">
         <h1>JSON</h1>
         <br/>
+
+        <p>Test Column</p>
         <p id="demo"></p>
+
         <table class="table table-bordered table-striped" id="employee_table">
           <tr>
             <th>No</th>
@@ -51,7 +54,7 @@ xmlhttp.onreadystatechange = function() {
     document.getElementById("demo").innerHTML = this.responseText;
   }
 };
-xmlhttp.open("GET", "json_demo_db.php?x=" + dbParam, true);
+xmlhttp.open("POST", "json_demo_db.php?x=" + dbParam, true);
 xmlhttp.send();
   });  
   
