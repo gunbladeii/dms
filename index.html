@@ -10,7 +10,7 @@
       <div class="table-responsive">
         <h1>JSON</h1>
         <br/>
-
+        <p id="demo"></p>
         <table class="table table-bordered table-striped" id="employee_table">
           <tr>
             <th>No</th>
@@ -43,7 +43,7 @@ $(document).ready(function(){
     });
 	
 var obj, dbParam, xmlhttp;
-obj = { "field":"nama","table":"employeeID", "limit":10 };
+obj = { "field":"nama","table":"login", "limit":10 };
 dbParam = JSON.stringify(obj);
 xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
