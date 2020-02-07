@@ -11,15 +11,15 @@
 		"id":"2",
 		"name":"Fatimah bin bakar",
 		"address":"Jalan Purnama merindu",
-		"gender":"Male",
+		"gender":"Female",
 		"designation":"pp",
 		"age":"40"
 	},
 	{
 		"id":"3",
-		"name":"ali bin bakar",
+		"name":"abu bin ali",
 		"address":"Jalan Purnama merindu",
-		"gender":"Male",
+		"gender":"male",
 		"designation":"pp",
 		"age":"40"
 	},
